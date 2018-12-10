@@ -15,22 +15,22 @@ public class FirstTask {
     public static void main(String[] args) {
         System.out.println("Hello World\n");                                                           // 1 clause
 
-        System.out.println("ФИО:     Шайковский Александр Александрович\n" +                           // 2 clause
-                           "Адрес:   РБ г. Минск ул. Казинца д. 102 кв. 218\n" +                       // 2 clause
-                           "Телефон: +375-25-618-24-21\n");                                            // 2 clause
+        System.out.println("Alexandr Shaikouski\n" +                           // 2 clause
+                           "102 Kazinca Str.\n" +                       // 2 clause
+                           "+375-25-618-24-21\n");                                            // 2 clause
 
-        System.out.println("Введите размеры Катетов: ");                                               // 3 clause
-        System.out.print("Первый катет равен: ");                                                      // 3 clause
+        System.out.println("Enter size cathetus ");                                               // 3 clause
+        System.out.print("First cathetus equels: ");                                                      // 3 clause
         cathetusFirst = scanner.nextDouble();                                                          // 3 clause
-        System.out.print("Второй катет равен: ");                                                      // 3 clause
+        System.out.print("Second cathetus equels ");                                                      // 3 clause
         cathetusSecond = scanner.nextDouble();                                                         // 3 clause
         System.out.println();                                                                          // 3 clause
 
-        System.out.println("Гипотенуза равна " + ft.getHypotenuse(cathetusFirst, cathetusSecond));     // 3 clause
-        System.out.println("Площадь равна    " + ft.getSquare(cathetusFirst, cathetusSecond));         // 3 clause
+        System.out.println("Hypotenuse equels " + ft.getHypotenuse(cathetusFirst, cathetusSecond));     // 3 clause
+        System.out.println("Square equels     " + ft.getSquare(cathetusFirst, cathetusSecond));         // 3 clause
         System.out.println();
 
-        System.out.println("Сумма натуральных чисел кратных " + K + " равна " + ft.getSummMultiples());// 4 clause
+        System.out.println("Sum of natural numbers " + K + " equels " + ft.getSummMultiples());// 4 clause
         System.out.println();
 
         ft.showFiveMethodOfString(str);                                                                // 5 clause
@@ -83,17 +83,17 @@ public class FirstTask {
         for(int i = 0; i < arr.length - 1; i++){
             if(arr[i] > arr[i+1]){
                 numberDecrease++;
-                System.out.println("Последовательность не является возрастающей");
+                System.out.println("Sequence is not increasing");
                 break;
             }else if(arr[i] < arr[i+1]){
                 numberIncrease++;
             }else continue;
             if(numberDecrease == numberIncrease && numberDecrease != 0){
-                System.out.println("Последовательность не является возрастающей");
+                System.out.println("Sequence is not increasing");
                 break;
             }
             if(i == arr.length - 2){
-                System.out.println("Последовательность является возрастающей");
+                System.out.println("Sequence is  increasing");
             }
         }
     }                                                    // 6 clause
